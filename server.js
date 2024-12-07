@@ -6,6 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 const talkRoutes = require('./routes/talk');
 const otp = require('./routes/otpRoutes.js');
 const speech = require('./routes/synthesizeRoutes.js');
+const path = require("path");
 
 
 
