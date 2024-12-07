@@ -7,11 +7,13 @@ const talkRoutes = require('./routes/talk');
 const otp = require('./routes/otpRoutes.js');
 const speech = require('./routes/synthesizeRoutes.js');
 
-app.use('/audio_files', express.static(path.join(__dirname, 'audio_files')));
+
 
 dotenv.config();
 
 const app = express();
+
+app.use('/audio_files', express.static(path.join(__dirname, 'audio_files')));
 
 // Middleware
 app.use(cors()); // Enable CORS
